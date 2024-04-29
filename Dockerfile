@@ -17,5 +17,5 @@ ENV NEXT_PUBLIC_APP_URL=https://www.mydomain.com
 
 RUN npm install
 RUN npm run build
-EXPOSE 80  # Expose port 80
+EXPOSE 8080  # Expose port 8080
 CMD ["npm", "run","start"]

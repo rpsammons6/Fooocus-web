@@ -7,7 +7,7 @@
     "deploy": "rm -rf dist&&rm -rf output&&yarn generate&&gcloud storage cp output/* gs://[bucket-name] --recursive",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 80",
+    "start": "next start -p 8080",
     "lint": "next lint"
   },
   "dependencies": {
