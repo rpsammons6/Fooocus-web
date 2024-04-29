@@ -69,8 +69,15 @@
 .full-width {
     width: 100vw;
 }
-/*Image size function*/
+/*Image size function (for Discord Button)*/
 .imageSize {
     width: 360px;
     height: 110px;
+}
+
+/* Adjust Gallery Image Size*/
+.imageViewer {
+    width: 50% !important;
+    height: 50% !important;
+    object-fit: contain !important;
 }

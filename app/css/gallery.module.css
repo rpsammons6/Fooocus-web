@@ -1,0 +1,6 @@
+/* Adjust Gallery Image Size*/
+.imageViewer {
+    width: 50% !important;
+    height: 50% !important;
+    object-fit: contain !important;
+}
