@@ -1,4 +1,4 @@
- # Use the Node.js 20 image based on Debian Buster as the base image
+# Use the Node.js 20 image based on Debian Buster as the base image
 FROM node:20
 
 # Create a directory named "app" in the Docker container
@@ -16,6 +16,9 @@ COPY . ./
 ENV NEXT_PUBLIC_APP_URL=http://f4services.live
 
 RUN npm install
+
+# Install specific image viewer dependency. Got errors related to its usage.
+RUN npm install react-simple-image-viewer
 RUN npm run build
 
 # Expose port 80
