@@ -1,6 +1,6 @@
 export const metadata = {
   title: 'Home - Fooocus AI',
-  description: 'Page description',
+  description: 'Cheap AI Image Generation for Everyone'
 }
 
 import Hero from '@/components/hero'

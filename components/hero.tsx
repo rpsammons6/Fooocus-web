@@ -1,5 +1,8 @@
 'use client';
 
+import React from "react";
+import styles from '../app/css/header.module.css';
+
 export default function Hero() {
     const smoothScrollToZigzag = () => {
         const zigzagElement = document.querySelector('#features');
@@ -14,17 +17,18 @@ export default function Hero() {
             alignItems: 'center',
             position: 'relative'
         }}>
-            {/* Video */}
-            <video autoPlay muted loop id="myVideo" disablePictureInPicture style={{
+            {/* Image -- Temporary while carousel is developed */}
+            <img src="/images/29fd179e-e3db-40a1-a53e-6de4b5daa508-0.png" alt="Header Style" style={{
                 position: 'absolute',
                 width: '100%',
+                left: '50%',
+                top: '50%',
                 height: '100%',
                 objectFit: 'cover',
+                transform: 'translate(-50%, -50%)',
                 zIndex: '-1',
-                animation: 'fade-in',
-            }}>
-                <source src="/videos/herovideo.mp4" type="video/mp4"/>
-            </video>
+                animation: 'fade-in'
+            }}/>
 
             {/* Hero content */}
             <div className="relative flex-grow flex flex-col justify-center items-center"
@@ -48,7 +52,7 @@ export default function Hero() {
                 alignItems: 'center'
             }}>
                 <div>
-                    <button onClick={smoothScrollToZigzag}>
+                    <button onClick={smoothScrollToZigzag} className={styles.logoImage}>
                         <img src="/images/arrow.png" alt="Learn More"
                              style={{opacity: 1, width: '80px', height: '50px'}}
                         />

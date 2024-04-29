@@ -20,7 +20,7 @@ export default function Header() {
                 backgroundColor: scrollPos === 0 ? 'transparent' : `rgba(255, 165, 0, ${opacity})`,
                 boxShadow: '0px 30px 70px rgba(0, 0, 0, 0.5)'
               }}>
-        <video autoPlay muted loop style={{
+        <img src="/gifs/herovideo.gif" alt="Header Style" style={{
           position: 'absolute',
           width: '100%',
           left: '50%',
@@ -30,17 +30,17 @@ export default function Header() {
           transform: 'translate(-50%, -50%)',
           zIndex: '-1',
           animation: 'fade-in'
-        }}>
-          <source src="/videos/herovideo.mp4" type="video/mp4"/>
-        </video>
+        }}/>
 
-        {/* Header content */}
+        {/* Header content */
+        }
         <div className="max-w-6xl mx-auto h-full">
           <div className="flex items-center justify-between h-full">
             <div className="shrink-0 mr-4 flex items-center">
               {/* Logo */}
               <Link href="/" className="logoImage" aria-label="Cruip">
-                <img src="/images/FooocusLogo_BaseTrans.png" className={`${styles.logoImage} w-20 h-20`} alt="FooocusLogo"/>
+                <img src="/images/FooocusLogo_BaseTrans.png" className={`${styles.logoImage} w-20 h-20`}
+                     alt="FooocusLogo"/>
               </Link>
             </div>
 
