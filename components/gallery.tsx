@@ -1,34 +1,10 @@
 'use client';
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from '../app/css/header.module.css';
-import ImageViewer from 'react-simple-image-viewer';
 
-export default function Gallery() {
+export default function Features() {
+
   const imgRefs = useRef<HTMLImageElement[]>([]);
-  const [currentImage, setCurrentImage] = useState(1);
-  const [isViewerOpen, setIsViewerOpen] = useState(false);
-  const images = [
-    "/gallery/IMG1.webp",
-    "/gallery/IMG2.jpg",
-    "/gallery/IMG3.webp",
-    "/gallery/IMG4.webp",
-    "/gallery/IMG5.webp",
-    "/gallery/IMG6.png",
-    "/gallery/IMG7.webp",
-    "/gallery/IMG8.png",
-    "/gallery/IMG9.webp"
-  ];
-
-  const openImageViewer = useCallback((index: number) => {
-    console.log(`Opening image viewer for image at index ${index}`);
-    setCurrentImage(index);
-    setIsViewerOpen(true);
-  }, []);
-
-  const closeImageViewer = () => {
-    setCurrentImage(0);
-    setIsViewerOpen(false);
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -79,29 +55,64 @@ export default function Gallery() {
             {/* Items */}
             <div
                 className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 lg:gap-16 items-start md:max-w-2xl lg:max-w-none bg-transparent"
-                data-aos="fade-up"
-                data-aos-anchor="#gallery">
-              {images.map((src, index) => (
-                  <div className="relative flex flex-col items-center">
-                    <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src={src}
-                         alt={`IMG${index + 1}`} onClick={() => openImageViewer(index)}/>
-                  </div>
-              ))}
-            </div>
+                data-aos-id-blocks>
 
-            <div className="imageViewer">
-              {isViewerOpen && (
-                  <ImageViewer
-                      src={images}
-                      currentIndex={currentImage}
-                      onClose={closeImageViewer}
-                      disableScroll={false}
-                      backgroundStyle={{
-                        backgroundColor: "rgba(0,0,0,0.9)"
-                      }}
-                      closeOnClickOutside={true}
-                  />
-              )}
+              {/* 1st item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG1.webp"
+                     alt="IMG1"/>
+              </div>
+
+              {/* 2nd item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="000"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG2.jpg" alt="IMG2"/>
+              </div>
+
+              {/* 3rd item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="000"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG3.webp" alt="IMG3"/>
+              </div>
+
+              {/* 4th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG4.webp" alt="IMG4"/>
+              </div>
+
+              {/* 5th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG5.webp"
+                     alt="IMG5"/>
+              </div>
+
+              {/* 6th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="100"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG6.png" alt="IMG6"/>
+              </div>
+
+              {/* 7th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG7.webp" alt="IMG7"/>
+              </div>
+
+              {/* 8th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG8.png" alt="IMG8"/>
+              </div>
+
+              {/* 9th item */}
+              <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="200"
+                   data-aos-anchor="[data-aos-id-blocks]">
+                <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG9.webp" alt="IMG9"/>
+              </div>
+
             </div>
 
             <div data-aos="fade-up" data-aos-delay="600"
