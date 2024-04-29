@@ -16,9 +16,6 @@ COPY . ./
 ENV NEXT_PUBLIC_APP_URL=http://f4services.live
 
 RUN npm install
-
-# Install specific image viewer dependency. Got errors related to its usage.
-RUN npm install react-simple-image-viewer
 RUN npm run build
 
 # Expose port 80
