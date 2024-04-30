@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap');
+@import './header.module.css';
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Hover Arrow Bobbing */
+@keyframes bobbing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/*import font*/
+@font-face {
+    font-family: 'Lexend';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap');
+}
+
+/*font for h1*/
+.h1 {
+    font-family: 'Lexend', sans-serif;
+    font-size: 120px;
+    font-weight: 800;
+    white-space: nowrap;
+    color: #FFFFFF;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1.5s ease-in-out;
+
+}
+
+/*Add media query for smaller screens*/
+@media (max-width: 600px) {
+    .h1 {
+        font-size: 60px;
+        margin: 10px;
+    }
+}
+
+/*arrow image css*/
+.arrow {
+    animation: bobbing 2s ease-in-out infinite;
+    opacity: 100%;
+    width: 80px;
+    height: 50px;
+    transition: opacity 0.5s, width 0.5s, height 0.5s, animation 0.5s;
+}
+
+.arrow:hover {
+    opacity: 100%;
+    width: 80px;
+    height: 50px;
+    animation: fadeInShadow 0.5s forwards !important;
+    transition: opacity 0.5s, width 0.5s, height 0.5s, animation 0.5s;
+}

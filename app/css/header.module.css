@@ -7,7 +7,7 @@
 }
 
 .buttonStyle:hover {
-    background-color: rgba(218, 83, 62, 0.67);
+    background-color: rgba(100, 20, 45, 0.67);
 }
 
 .logoImage:hover {
@@ -69,15 +69,40 @@
 .full-width {
     width: 100vw;
 }
-/*Image size function (for Discord Button)*/
+/*Image size function*/
 .imageSize {
     width: 360px;
     height: 110px;
 }
 
-/* Adjust Gallery Image Size*/
-.imageViewer {
-    width: 50% !important;
-    height: 50% !important;
-    object-fit: contain !important;
+/* Gradient Animation CSS */
+.headerGradient {
+    background: linear-gradient(274deg, #bc265d, #da533e, #f4b144);
+    background-size: 100% 100%;
+
+    -webkit-animation: HeaderGradient 15s ease infinite;
+    -moz-animation: HeaderGradient 15s ease infinite;
+    -o-animation: HeaderGradient 15s ease infinite;
+    animation: HeaderGradient 15s ease infinite;
+}
+
+@-webkit-keyframes HeaderGradient {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@-moz-keyframes HeaderGradient {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@-o-keyframes HeaderGradient {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
+}
+@keyframes HeaderGradient {
+    0%{background-position:29% 0%}
+    50%{background-position:72% 100%}
+    100%{background-position:29% 0%}
 }

@@ -1,8 +1,5 @@
 'use client';
-
-import React from "react";
-import styles from '../app/css/header.module.css';
-
+import styles from '../app/css/hero.module.css';
 export default function Hero() {
     const smoothScrollToZigzag = () => {
         const zigzagElement = document.querySelector('#features');
@@ -18,7 +15,7 @@ export default function Hero() {
             position: 'relative'
         }}>
             {/* Image -- Temporary while carousel is developed */}
-            <img src="/images/29fd179e-e3db-40a1-a53e-6de4b5daa508-0.png" alt="Header Style" style={{
+            <img src="/carousel/C-IMG-2.png" alt="Header Style" style={{
                 position: 'absolute',
                 width: '100%',
                 left: '50%',
@@ -36,8 +33,10 @@ export default function Hero() {
 
                 {/* Section header */}
                 <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-                    <h1 className="h1 mb-4 text-center" data-aos-delay="1000" data-aos="fade-in"
-                        style={{fontSize: '120px', whiteSpace: 'none', color: '#FFFFFF'}}>Welcome to Fooocus</h1>
+                    <div className={styles.h1}>
+                        <span>Welcome to</span>
+                        <span>Fooocus</span>
+                    </div>
                     <p className="text-xl text-white-100 mb-8 text-center" data-aos="fade-up" data-aos-delay="2000"></p>
                 </div>
 
@@ -52,9 +51,10 @@ export default function Hero() {
                 alignItems: 'center'
             }}>
                 <div>
-                    <button onClick={smoothScrollToZigzag} className={styles.logoImage}>
+                    {/*Arrow */}
+                    <button onClick={smoothScrollToZigzag}>
                         <img src="/images/arrow.png" alt="Learn More"
-                             style={{opacity: 1, width: '80px', height: '50px'}}
+                             className={styles.arrow}
                         />
                     </button>
                 </div>

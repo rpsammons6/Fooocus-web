@@ -15,32 +15,19 @@ export default function Header() {
   const headerClass = useMemo(() => `z-30 py-0 h-16 ${scrollPos >= 0 ? 'fixed top-0 w-full' : ''}`, [scrollPos]);
 
   return (
-      <header className={`z-30 py-0 h-16 ${scrollPos >= 0 ? 'fixed top-0 w-full' : ''}`} data-aos-delay="1000"
+      <header className={`z-30 py-0 h-16 ${styles.headerGradient} ${scrollPos >= 0 ? 'fixed top-0 w-full' : ''}`} data-aos-delay="1000"
               style={{
                 backgroundColor: scrollPos === 0 ? 'transparent' : `rgba(255, 165, 0, ${opacity})`,
                 boxShadow: '0px 30px 70px rgba(0, 0, 0, 0.5)'
               }}>
-        <img src="/gifs/herovideo.gif" alt="Header Style" style={{
-          position: 'absolute',
-          width: '100%',
-          left: '50%',
-          top: '50%',
-          height: '100%',
-          objectFit: 'cover',
-          transform: 'translate(-50%, -50%)',
-          zIndex: '-1',
-          animation: 'fade-in'
-        }}/>
 
-        {/* Header content */
-        }
+        {/* Header content */}
         <div className="max-w-6xl mx-auto h-full">
           <div className="flex items-center justify-between h-full">
             <div className="shrink-0 mr-4 flex items-center">
               {/* Logo */}
               <Link href="/" className="logoImage" aria-label="Cruip">
-                <img src="/images/FooocusLogo_BaseTrans.png" className={`${styles.logoImage} w-20 h-20`}
-                     alt="FooocusLogo"/>
+                <img src="/images/FooocusLogo_BaseTrans.png" className={`${styles.logoImage} w-20 h-20`} alt="FooocusLogo"/>
               </Link>
             </div>
 
