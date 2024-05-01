@@ -55,7 +55,7 @@ export default function Header() {
                 </li>
                 <li className="h-full" data-aos-delay="1150" data-aos="fade-down">
                   <Link
-                      href="/docs"
+                      href="http://f4services.live/docs"
                       className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}
                   >
                     Documentation
