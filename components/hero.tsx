@@ -15,7 +15,7 @@ export default function Hero() {
             position: 'relative'
         }}>
             {/* Image -- Temporary while carousel is developed */}
-            <img src="/carousel/C-IMG-2.png" alt="Header Style" style={{
+            <img src="/carousel/C-IMG-5.png" alt="Header Style" style={{
                 position: 'absolute',
                 width: '100%',
                 left: '50%',
