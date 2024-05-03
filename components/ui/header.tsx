@@ -37,7 +37,7 @@ export default function Header() {
               <ul className="flex grow justify-end flex-wrap items-center py-0 h-full "> {/* Set height to full */}
                 <li className="h-full" data-aos-delay="1050" data-aos="fade-down">
                   <Link
-                      href="https://discord.gg/uHH4y2eEUQ"
+                      href="https://discord.gg/VhKqMzKDdE"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}

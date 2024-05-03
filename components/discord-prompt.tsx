@@ -32,7 +32,7 @@ export default function DiscordPrompt() {
                 {/*Discord Button*/}
                 <div>
                   <Link
-                      href="https://discord.gg/uHH4y2eEUQ"
+                      href="https://discord.gg/VhKqMzKDdE"
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`btn-sm ${styles.logoImage} ml-0 py-0 h-full`}
