@@ -3,19 +3,13 @@ import styles from "@/app/css/header.module.css";
 import React from "react";
 import Link from "next/link";
 
-export default function Newsletter() {
+export default function DiscordPrompt() {
   return (
       <section>
         <div className="full-width">
 
-          {/* CTA box */}
-          <div className="relative bg-orange-300 py-10 px-8 md:py-16 md:px-12" data-aos="fade-up">
-            {/* Video background */}
-            <video className="absolute top-0 left-0 w-full h-full object-cover" autoPlay muted loop>
-              <source src="/videos/herovideo.mp4" type="video/mp4"/>
-            </video>
-
-            {/* Background illustration */}
+          {/* Background illustration */}
+          <div className={`${styles.headerGradient} py-10 px-8 md:py-16 md:px-12`} data-aos="fade-up">
             <div className="absolute top-0 pointer-events-none" aria-hidden="true">
             </div>
 

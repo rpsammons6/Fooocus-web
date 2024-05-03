@@ -1,6 +1,6 @@
 'use client'
 import React, { useMemo } from 'react';
-import { Suspense, lazy } from 'react';
+import { lazy } from 'react';
 import Link from 'next/link'
 import useScrollPosition from '../../hooks/useScrollPosition';
 import styles from '../../app/css/header.module.css';
@@ -56,6 +56,8 @@ export default function Header() {
                 <li className="h-full" data-aos-delay="1150" data-aos="fade-down">
                   <Link
                       href="http://docs.f4services.live"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}
                   >
                     Documentation

@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import styles from "@/app/css/header.module.css";
+import headerStyles from "@/app/css/header.module.css";
+import zigzagStyles from "@/app/css/zigzag.module.css";
 
 export default function Zigzag() {
   return (
@@ -29,24 +30,16 @@ export default function Zigzag() {
                 <div
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
                     data-aos="fade-up">
-                  <img src="/gifs/gif-tut1.gif" alt="Tutorial 1" className={`${styles.glow}`} style={{
-                    position: 'relative',
-                    width: '540px',
-                    height: '400px',
-                    objectFit: 'cover',
-                    zIndex: '-1',
-                    animation: 'fade-in',
-                  }}/>
+                  <img src="/gifs/gif-tut1.gif" alt="Tutorial 1"
+                       className={`${headerStyles.glow} ${zigzagStyles.gifsStyle}`}/>
                 </div>
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl mb-2" style={{
-                      backgroundImage: `url(/gifs/small-text-gif.gif)`,
-                      backgroundClip: 'text',
-                      WebkitBackgroundClip: 'text',
-                      WebkitTextFillColor: 'transparent'
+                    <div className="font-architects-daughter text-xl mb-2"
+                         style={{
+                      color: '#e97431'
                     }}>More speed. Less spend
                     </div>
                     <h3 className="h3 mb-3">We're the Cheapest.</h3>
@@ -89,28 +82,17 @@ export default function Zigzag() {
                 <div
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0"
                     data-aos="fade-up">
-                  <img src="/gifs/gif-tut2.gif" alt="Tutorial 2" className={`${styles.glow}`} style={{
-                    position: 'relative',
-                    width: '540px',
-                    height: '400px',
-                    objectFit: 'cover',
-                    zIndex: '-1',
-                    animation: 'fade-in',
-                  }}/>
+                  <img src="/gifs/gif-tut2.gif" alt="Tutorial 1"
+                       className={`${headerStyles.glow} ${zigzagStyles.gifsStyle}`}/>
                 </div>
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">
                       <div className="font-architects-daughter text-xl mb-2" style={{
-                        backgroundImage: `url(/gifs/small-text-gif.gif)`,
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
+                        color: '#e97431'
                       }}>More Art. Less Hassle
                       </div>
-                    </div>
                     <h3 className="h3 mb-3">We're the Easiest.</h3>
                     <p className="text-xl text-gray-400 mb-4">Our Image Generation is built around the layman. Even if you
                       have never created text
@@ -151,29 +133,19 @@ export default function Zigzag() {
                 <div
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
                     data-aos="fade-up">
-                  <img src="/gifs/gif-tut2.gif" alt="Tutorial 2" className={`${styles.glow}`} style={{
-                    position: 'relative',
-                    width: '540px',
-                    height: '400px',
-                    objectFit: 'cover',
-                    zIndex: '-1',
-                    animation: 'fade-in',
-                  }}/>
+                  <img src="/gifs/gif-tut2.gif" alt="Tutorial 1"
+                       className={`${headerStyles.glow} ${zigzagStyles.gifsStyle}`}/>
                 </div>
                 {/* Content */}
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                      <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                        <div className="font-architects-daughter text-xl mb-2" style={{
-                          backgroundImage: `url(/gifs/small-text-gif.gif)`,
-                          backgroundClip: 'text',
-                          WebkitBackgroundClip: 'text',
-                          WebkitTextFillColor: 'transparent'
+                        <div className="font-architects-daughter text-xl mb-2"
+                             style={{
+                          color: '#e97431'
                         }}>What you want. When you want
                         </div>
-                      </div>
                     </div>
                     <h3 className="h3 mb-3">We're Flexible.</h3>
                     <p className="text-xl text-gray-400 mb-4">Fooocus is extremely modular by design, and new LORAs are
@@ -214,7 +186,7 @@ export default function Zigzag() {
                 <div
                     className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 rtl"
                     data-aos="fade-up">
-                  <Image src="/images/PromoImage.png" alt="Promo Image" className={`${styles.glow}`} width={540}
+                  <Image src="/images/PromoImage.png" alt="Promo Image" className={`${headerStyles.glow}`} width={540}
                          height={400}/>
                 </div>
                 {/* Content */}
@@ -222,11 +194,9 @@ export default function Zigzag() {
                      data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
                     <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                      <div className="font-architects-daughter text-xl mb-2" style={{
-                        backgroundImage: `url(/gifs/small-text-gif.gif)`,
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
+                      <div className="font-architects-daughter text-xl mb-2"
+                           style={{
+                        color: '#e97431'
                       }}>Cheaper art. For you.
                       </div>
                     </div>
