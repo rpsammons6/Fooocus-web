@@ -1,3 +1,4 @@
+@import './header.module.css';
 /* Adjust Gallery Image Size*/
 .imageViewer {
     width: 50% !important;

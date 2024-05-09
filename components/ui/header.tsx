@@ -35,6 +35,14 @@ export default function Header() {
             <nav className="hidden md:flex md:grow h-full">
               {/* Desktop links */}
               <ul className="flex grow justify-end flex-wrap items-center py-0 h-full "> {/* Set height to full */}
+                <li className="h-full" data-aos-delay="1000" data-aos="fade-down">
+                  <Link
+                      href="/subscribe"
+                      className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}
+                  >
+                    Subscribe
+                  </Link>
+                </li>
                 <li className="h-full" data-aos-delay="1050" data-aos="fade-down">
                   <Link
                       href="https://discord.gg/VhKqMzKDdE"
@@ -61,14 +69,6 @@ export default function Header() {
                       className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}
                   >
                     Documentation
-                  </Link>
-                </li>
-                <li className="h-full" data-aos-delay="1200" data-aos="fade-down">
-                  <Link
-                      href="/about"
-                      className={`btn-sm ${styles.buttonStyle} ml-0 py-0 h-full`}
-                  >
-                    About Us
                   </Link>
                 </li>
                 <li className="h-full" data-aos-delay="1250" data-aos="fade-down">

@@ -1,7 +1,7 @@
 'use client';
 import 'react-photo-view/dist/react-photo-view.css';
 import React, { useEffect, useRef } from 'react';
-import styles from '../app/css/header.module.css';
+import styles from '../app/css/gallery.module.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 
 export default function Features() {
@@ -32,7 +32,7 @@ export default function Features() {
         }
       });
     }, {
-      rootMargin: '200px 0px'  // Load images 200px before they come into view
+      rootMargin: '400px 0px'  // Load images 400px before they come into view
     });
 
     imgRefs.current.forEach(img => observer.observe(img));

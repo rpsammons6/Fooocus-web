@@ -1,6 +1,7 @@
 'use client';
 import styles from '../app/css/hero.module.css';
 import { useState, useEffect, useCallback } from 'react';
+import { Helmet } from 'react-helmet';
 
 export default function Hero() {
     const images = [
@@ -52,6 +53,10 @@ export default function Hero() {
                 className="relative flex-grow flex flex-col justify-center items-center"
                 style={{ position: 'absolute', top: '50%', transform: 'translateY(-50%)' }}
             >
+                {/*Metadata keywords*/}
+                <Helmet>
+                    <meta name="keywords" content="Fooocus, Midjourney, AI Art, Image Generator, Stable Diffusion" />
+                </Helmet>
                 <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                     <div className={styles.h1}>
                         <span>Welcome to</span>

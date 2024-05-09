@@ -18,3 +18,9 @@ Added more images to Hero.tsx
 Changed the images displayed in the Gallery
 Optimized the DockerFile
 Optimized the CSS
+
+## [1.1.1] - 2024-05-09
+
+Optimized Photos in Hero.tsx
+Prepared Login pages to maintain traffic
+Further CSS and image optimizations
