@@ -61,8 +61,8 @@ export default function Features() {
                   {/* 2nd item */}
                   <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="000"
                        data-aos-anchor="[data-aos-id-blocks]">
-                    <PhotoView src="/gallery/IMG2.jpg">
-                      <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG2.jpg" alt="IMG2"/>
+                    <PhotoView src="/gallery/full-size/F-IMG2.webp">
+                      <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG2.webp" alt="IMG2"/>
                     </PhotoView>
                   </div>
 
@@ -85,7 +85,7 @@ export default function Features() {
                   {/* 5th item */}
                   <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="000"
                        data-aos-anchor="[data-aos-id-blocks]">
-                    <PhotoView src="/gallery/IMG5.webp">
+                    <PhotoView src="/gallery/full-size/F-IMG5.webp">
                       <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG5.webp" alt="IMG5"/>
                     </PhotoView>
                   </div>
@@ -117,7 +117,7 @@ export default function Features() {
                   {/* 9th item */}
                   <div className="relative flex flex-col items-center" data-aos="fade-up" data-aos-delay="000"
                        data-aos-anchor="[data-aos-id-blocks]">
-                    <PhotoView src="/gallery/IMG9.webp">
+                    <PhotoView src="/gallery/full-size/F-IMG9.webp">
                       <img className={`${styles.hoverScale} ${styles.hoverGlow}`} src="/gallery/IMG9.webp" alt="IMG9"/>
                     </PhotoView>
                   </div>

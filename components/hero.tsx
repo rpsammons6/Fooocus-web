@@ -1,6 +1,20 @@
 'use client';
 import styles from '../app/css/hero.module.css';
+import {useState, useEffect} from 'react';
+
 export default function Hero() {
+    const images = [
+       ' /carousel/C-IMG1.png',
+        ' /carousel/C-IMG2.png',
+        '/carousel/C-IMG3.webp',
+        '/carousel/C-IMG4.webp',
+        '/carousel/C-IMG5.webp',
+        '/carousel/C-IMG6.webp'
+
+    ]
+
+    const [index, setIndex] = useState(Math.floor(Math.random() * images.length));
+
     const smoothScrollToZigzag = () => {
         const zigzagElement = document.querySelector('#features');
         zigzagElement?.scrollIntoView({ behavior: 'smooth' });
@@ -12,19 +26,14 @@ export default function Hero() {
             flexDirection: 'column',
             justifyContent: 'space-between',
             alignItems: 'center',
-            position: 'relative'
+            position: 'relative',
+            backgroundImage: `url(${images[index]})`, // Set the background image to the randomly selected image
+            backgroundSize: 'cover', // Cover the entire section with the image
+            backgroundPosition: 'center' // Center the image
         }}>
-            {/* Image -- Temporary while carousel is developed */}
-            <img src="/carousel/C-IMG-5.png" alt="Header Style" style={{
-                position: 'absolute',
-                width: '100%',
-                left: '50%',
-                top: '50%',
-                height: '100%',
-                objectFit: 'cover',
-                transform: 'translate(-50%, -50%)',
-                zIndex: '-1',
-            }}/>
+            {/* Carousel */}
+            <div className="slideshow">
+            </div>
 
             {/* Hero content */}
             <div className="relative flex-grow flex flex-col justify-center items-center"

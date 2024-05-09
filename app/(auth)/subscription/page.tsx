@@ -16,17 +16,6 @@ export default function Hero() {
             position: 'relative'
         }}>
             {/* Video */}
-            <video autoPlay muted loop id="myVideo" disablePictureInPicture style={{
-                position: 'absolute',
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                zIndex: '-1',
-                animation: 'fade-in',
-            }}>
-                <source src="/videos/herovideo.mp4" type="video/mp4"/>
-            </video>
-
             {/* Hero content */}
             <div className="relative flex-grow flex flex-col justify-center items-center"
                  style={{position: 'absolute', top: '50%', transform: 'translateY(-50%)'}}>

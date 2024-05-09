@@ -86,7 +86,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                  href=""
+                  href="#gallery"
                   className={`font-medium w-full inline-flex items-center justify-center px-4 py-2 my-2 ${styles.buttonStyle}`}
                   onClick={() => setMobileNavOpen(false)}
               >
@@ -95,7 +95,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                  href=""
+                  href="http://docs.f4services.live"
                   className={`font-medium w-full inline-flex items-center justify-center px-4 py-2 my-2 ${styles.buttonStyle}`}
                   onClick={() => setMobileNavOpen(false)}
               >
@@ -103,7 +103,7 @@ export default function MobileMenu() {
               </Link>
             </li>
             <li>
-              <Link href=""
+              <Link href="/signin"
                     className={`font-medium w-full inline-flex items-center justify-center px-4 py-2 my-2 ${styles.buttonStyle}`}
                     onClick={() => setMobileNavOpen(false)}>
                 Sign in
@@ -111,7 +111,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                  href=""
+                  href="/signup"
                   className={`font-medium w-full inline-flex items-center justify-center px-4 py-2 my-2 ${styles.buttonStyle}`}
                   onClick={() => setMobileNavOpen(false)}
               >

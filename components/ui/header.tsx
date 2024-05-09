@@ -18,7 +18,7 @@ export default function Header() {
       <header className={`z-30 py-0 h-16 ${styles.headerGradient} ${scrollPos >= 0 ? 'fixed top-0 w-full' : ''}`} data-aos-delay="1000"
               style={{
                 backgroundColor: scrollPos === 0 ? 'transparent' : `rgba(255, 165, 0, ${opacity})`,
-                boxShadow: '0px 30px 70px rgba(0, 0, 0, 0.5)'
+                boxShadow: '0px 30px 70px rgba(0, 0, 0, 1)'
               }}>
 
         {/* Header content */}

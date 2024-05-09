@@ -10,7 +10,7 @@ export default function Zigzag() {
 
             {/* Section header */}
             <div className="max-w-12xl text-center pb-12 md:pb-20 border border-transparent p-4 bg-transparent">
-              <h2 className="h2 mb-4 text-white-100">AI Image Generation has never been easier <span
+              <h2 className="h2 mb-4 text-white-100">AI Image Creation has never been easier <span
                   style={{
                     backgroundImage: `url(/gifs/text-gif-1.gif)`,
                     backgroundClip: 'text',
@@ -37,7 +37,7 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl mb-2"
+                    <div className="font-inter text-xl mb-2"
                          style={{
                       color: '#e97431'
                     }}>More speed. Less spend
@@ -89,7 +89,7 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                      <div className="font-architects-daughter text-xl mb-2" style={{
+                      <div className="font-inter text-xl mb-2" style={{
                         color: '#e97431'
                       }}>More Art. Less Hassle
                       </div>
@@ -140,8 +140,8 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-right">
                   <div className="md:pr-4 lg:pr-12 xl:pr-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                        <div className="font-architects-daughter text-xl mb-2"
+                    <div>
+                        <div className="font-inter text-xl mb-2"
                              style={{
                           color: '#e97431'
                         }}>What you want. When you want
@@ -193,8 +193,8 @@ export default function Zigzag() {
                 <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6"
                      data-aos="fade-left">
                   <div className="md:pl-4 lg:pl-12 xl:pl-16">
-                    <div className="font-architects-daughter text-xl text-purple-600 mb-2">
-                      <div className="font-architects-daughter text-xl mb-2"
+                    <div>
+                      <div className="font-inter text-xl mb-2"
                            style={{
                         color: '#e97431'
                       }}>Cheaper art. For you.

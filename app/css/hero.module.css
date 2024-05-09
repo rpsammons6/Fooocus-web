@@ -69,3 +69,30 @@
     animation: fadeInShadow 0.5s forwards !important;
     transition: opacity 0.5s, width 0.5s, height 0.5s, animation 0.5s;
 }
+
+/* Blur Class for Carousel Loading */
+.blur-effect {
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 500px;
+}
+
+.slideshowSlider {
+    display: flex;
+    width: 300%;
+    white-space: nowrap;
+}
+
+.slide {
+    display: inline-block;
+    height: 400px;
+    width: 100%;
+    border-radius: 40px;
+}

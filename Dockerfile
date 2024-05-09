@@ -2,13 +2,13 @@
 FROM node:20
 
 # Create a directory named "app" in the Docker container
-RUN mkdir /app
+RUN mkdir /pages
 
 # Copy the package.json file to the "app" directory
-COPY package.json /app/
+COPY package.json /pages/
 
 # Set the "app" directory as the working directory
-WORKDIR /app
+WORKDIR /pages
 
 # Set the "app" directory as the working directory
 COPY . ./

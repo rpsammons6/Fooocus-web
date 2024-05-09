@@ -10,3 +10,11 @@ Minor Changes. Including, but not limited to:
 ## [1.0.0] - 2024-04-28
 
 Initial release
+
+## [1.1.0] - 2024-05-08
+
+Added Image Viewer to Gallery.tsx
+Added more images to Hero.tsx
+Changed the images displayed in the Gallery
+Optimized the DockerFile
+Optimized the CSS
