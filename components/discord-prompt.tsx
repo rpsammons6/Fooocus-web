@@ -19,12 +19,7 @@ export default function DiscordPrompt() {
               <div className="flex flex-col items-center mb-4 lg:mb-0 text-center lg:text-center lg:w-1/2">
                 <div>
                   <h3 className="h3 text-center text-white-100 mb-3 shadow-text">
-                      <span className={styles.boldText} style={{
-                        backgroundImage: `url(/gifs/text-gif-1.gif)`,
-                        backgroundClip: 'text',
-                        WebkitBackgroundClip: 'text',
-                        WebkitTextFillColor: 'transparent'
-                      }}>Begin creating now</span>
+                      <span>Begin creating now</span>
                   </h3>
                   <p className="text-white-100 text-lg"></p>
                 </div>
